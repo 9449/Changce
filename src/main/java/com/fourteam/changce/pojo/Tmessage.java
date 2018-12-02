@@ -52,4 +52,15 @@ public class Tmessage {
     public void setMessage(String message) {
         this.message = message == null ? null : message.trim();
     }
+
+    @Override
+    public String toString() {
+        return "Tmessage{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", email='" + email + '\'' +
+                ", createtime=" + createtime +
+                ", message='" + message + '\'' +
+                '}';
+    }
 }

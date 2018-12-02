@@ -16,4 +16,5 @@ public interface TmessageMapper {
     int updateByPrimaryKeyWithBLOBs(Tmessage record);
 
     int updateByPrimaryKey(Tmessage record);
+
 }

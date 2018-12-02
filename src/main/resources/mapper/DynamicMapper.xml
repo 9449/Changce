@@ -92,4 +92,7 @@
       createtime = #{createtime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <select id="findDynamics" resultMap="BaseResultMap">
+    select * from t_dynamic
+  </select>
 </mapper>

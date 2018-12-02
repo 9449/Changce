@@ -130,4 +130,10 @@
       createtime = #{createtime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <select id="findAll" resultMap="BaseResultMap">
+    select * from t_attorney limit 0,6
+  </select>
+  <select id="selectOrder" resultMap="BaseResultMap">
+    select * from t_attorney order by id desc limit 0,1
+  </select>
 </mapper>

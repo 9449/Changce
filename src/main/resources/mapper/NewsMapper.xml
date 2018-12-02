@@ -92,4 +92,7 @@
       createtime = #{createtime,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <select id="findNews" resultMap="BaseResultMap">
+    select * from t_news order by id desc limit 0,12
+  </select>
 </mapper>

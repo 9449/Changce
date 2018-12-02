@@ -2,6 +2,8 @@ package com.fourteam.changce.dao;
 
 import com.fourteam.changce.pojo.Attorney;
 
+import java.util.List;
+
 public interface AttorneyMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -16,4 +18,8 @@ public interface AttorneyMapper {
     int updateByPrimaryKeyWithBLOBs(Attorney record);
 
     int updateByPrimaryKey(Attorney record);
+
+    List<Attorney> findAll();
+
+    Attorney selectOrder();
 }

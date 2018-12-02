@@ -2,6 +2,8 @@ package com.fourteam.changce.dao;
 
 import com.fourteam.changce.pojo.News;
 
+import java.util.List;
+
 public interface NewsMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -16,4 +18,6 @@ public interface NewsMapper {
     int updateByPrimaryKeyWithBLOBs(News record);
 
     int updateByPrimaryKey(News record);
+
+    List<News> findNews();
 }

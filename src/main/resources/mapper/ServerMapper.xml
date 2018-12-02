@@ -92,4 +92,7 @@
       createtime = #{createtime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <select id="findServers" resultMap="BaseResultMap">
+    select * from t_server;
+  </select>
 </mapper>

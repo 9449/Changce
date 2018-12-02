@@ -2,6 +2,8 @@ package com.fourteam.changce.dao;
 
 import com.fourteam.changce.pojo.Honor;
 
+import java.util.List;
+
 public interface HonorMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -16,4 +18,6 @@ public interface HonorMapper {
     int updateByPrimaryKeyWithBLOBs(Honor record);
 
     int updateByPrimaryKey(Honor record);
+
+    List<Honor> findHonors();
 }

@@ -32,7 +32,7 @@
     insert into t_tmessage (id, username, email, 
       createtime, message)
     values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
-      #{createtime,jdbcType=TIMESTAMP}, #{message,jdbcType=LONGVARCHAR})
+     now(), #{message,jdbcType=LONGVARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.fourteam.changce.pojo.Tmessage">
     insert into t_tmessage
